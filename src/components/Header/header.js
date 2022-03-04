@@ -8,15 +8,14 @@ function Container(){
     return(
       <AppBar position="static"
        sx = {{
-         backgroundColor : "#0A9396" 
+         backgroundColor : "#af8e5c"
+          
        }}>
   <toolbar className='container' variant="dense">
   
   <div  className ='containerLeft'>
-        <h1 className = 'containerTitle'  >
-          
-           
-           </h1>
+
+        <Link className = 'containerTitle' to = "/"> My Firsty Site </Link>
     </div>
     <div className ='containerRight'>
 

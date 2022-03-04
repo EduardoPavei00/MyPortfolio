@@ -1,38 +1,210 @@
-.App {
-  text-align: center;
+
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 30px;
+  max-width: 800px;
+  color: #603601;
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-shadow: 0.1em 0.01em 0.03em #E9DAC1;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{ 
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 30px;
+  max-width: 800px;
+  text-decoration: none;
+  color: #603601;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-shadow: 0.1em 0.01em 0.03em #E9DAC1
+}
+button{
+  font-family: 'Courier New', Courier, monospace;
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  border-color: #603601;
+  color: #af8e5c;
+  font-size: 25px;
+  color: #1C0A00;
+  background-image: -webkit-linear-gradient(45deg, #603601 50%, transparent 50%);
+  background-image: linear-gradient(45deg, #603601 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: 300ms ease-in-out;
+  transition:  300ms ease-in-out;
+    cursor: url(http://i225.photobucket.com/albums/dd43/erickson_29/basic.gif), auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button:hover{
+  background-position: 0;
   }
+input {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 15px;
+  width: 250px;
+  height: 45px;
+  background-color:#af8e5c;
+  box-shadow: 5px 2px 2px #361500;
+  color:#1C0A00 ;
+  letter-spacing: 0.1em;
+  font-size: 25px;
+  font-weight: 400;
+  
+}
+input:hover{
+
+  box-shadow: 10px 5px 5px #361500;
+}
+input:hover::placeholder{
+  transform: rotateY(360deg);
+}
+input::placeholder{
+  transition: 0.8s;
+  color:#1C0A00 ;
+  letter-spacing: 0.1em;
+  font-size: 25px;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+/*header*/
+
+.containerLeft{
+  height: 100px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+
+  float: left;
+}
+.containerTitle{
+  
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 30px;
+  color: #603601;
+  font-size: 45px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-shadow: 0.1em 0.01em 0.03em #E9DAC1;
+  transition: 0.8s;
+}
+.containerTitle:hover{
+  text-decoration: none;
+  cursor: pointer;
+  border: 10px solid #1C0A00;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(20px 12px 6px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  -webkit-transform: rotateZ(-360deg) scale(1.5);
+  transform: rotateZ(-360deg) scale(1.5);
+}
+
+.logoContainer{
+  width: 45px;
+  height: 45px;
+}
+
+.containerRight{
+  display: flex;
+  float: right;
+  margin-top: 25px;
+  margin-right: 15px;
+  justify-content: space-between;
+
+}
+
+.containerBotao{
+  cursor: pointer;
+  text-decoration: none;
+  padding: 15px;
+  background-color:#603601 ;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: .2em;
+  text-shadow: 0.1em 0.01em 0.03em #E9DAC1;
+  width: 175px;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #af8e5c;
+  font-size: 25px;
+  border: 3px solid #361500;
+  box-shadow: 0 4px 8px 0 #1C0A00, 0 3px 10px 0 #1C0A00;
+}
+.containerBotao:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+  background-color: #603601;
+  border: 2px solid #1C0A00;
+  color: white;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.05s;
+
+}
+
+/*Footer*/
+
+.footer{
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #af8e5c;
+
+}
+
+.footerLeft{
+  float: left;
+
+}
+.footerRight{
+  float: right;
+}
+.socialFooter{
+  padding: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 300px;
+  margin-right: 50px;
+  
+}
+.textIconFooter{
+  cursor: pointer;
+  color: #603601;
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.textIconFooter:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+  background-color: #603601;
+  
+  border: 2px solid #1C0A00;
   color: white;
+  transition: all 0.5s ease-in;
+  transition-delay: 0.05s;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*List BOOK*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list{
+  margin-left: 100px;
+  padding: 15px;
+  letter-spacing: .1em;
+  font-size: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  color:#1C0A00;
+}
+.list:hover{
+  text-shadow: 0 10px 10px #1C0A00;
 }
